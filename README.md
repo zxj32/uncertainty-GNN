@@ -5,9 +5,9 @@ This is a TensorFlow implementation of the uncertainty-GNN model as described in
 [Xujiang Zhao](https://zxj32.github.io/), Feng Chen, Shu Hu, Jin-Hee Cho [Uncertainty Aware Semi-Supervised Learning on Graph Data](https://zxj32.github.io/data/NIPS2020_Uncertainty.pdf), NIPS 2020 (**Spotlight**)
 
 
-![Uncertainty Framework](framework.png)
+![Uncertainty Framework](framework.png "A multi-source uncertainty framework of GNN that reflecting various types of uncertainties in both deep learning and belief/evidence theory domains for node classification predictions.")
 
-A multi-source uncertainty framework of GNN that reflecting various types of uncertainties in both deep learning and belief/evidence theory domains for node classification predictions.
+
 
 ## Installation
 
