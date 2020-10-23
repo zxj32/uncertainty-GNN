@@ -34,9 +34,27 @@ A multi-source uncertainty framework of GNN that reflecting various types of unc
 
 ## Run the demo
 
+After set up above 2 steps, you are ready to run our code. You can directly run a demo code:
 ```bash
 python S-GCN.py
 ```
+
+For our proposed *S-BGNN-T-K* model, you need to run following code. For example, to get prior Dirichlet Distribution (save in "data/prior/"), please try to run:
+```bash
+python Kernel_Graph.py
+```
+to get pretrain Teacher network (save in "data/output/" or "data/ood/"), please try to run:
+```bash
+python Baseline.py -dataset cora --model GCN --OOD_detection 1
+```
+
+to run our method (*S-BGNN-T-K*) (--OOD_detection: 1 means OOD detection task, 0 means Misclassification task):
+```bash
+python S-BGCN-T-K.py -dataset cora --OOD_detection 1
+```    
+If there is no error display, then we are done for this section.
+
+(Notice: Our code is based on original GCN code: https://github.com/tkipf/gcn)
 
 ## Dataset
 
@@ -47,14 +65,24 @@ In order to use your own data, you have to provide
 
 Have a look at the `load_data()` function in `input_data.py` for an example.
 
-Our date processing is same as [GCN code](https://github.com/tkipf/gcn)
 
+In this example, we load citation network data (Cora, Citeseer or Pubmed). The original datasets can be found here: http://www.cs.umd.edu/~sen/lbc-proj/LBC.html. In addition, we used another three datasets (Coauthor Physics, Amazon Computer, and Amazon Photo) provided by https://github.com/shchur/gnn-benchmark (Oleksandr Shchur, Maximilian Mumme, Aleksandar Bojchevski, Stephan Günnemann, [Pitfalls of Graph Neural Network Evaluation](https://arxiv.org/abs/1811.05868), Relational Representation Learning Workshop, NeurIPS 2018).  
 
 
 ## Models
 
 You can choose between the following models: 
++Our proposed:
+* `S-GCN`: Subjective GCN that can estimate two evidential uncertainty types (vacuity and dissonance).
+* `S-BGCN`: Subjective GCN with the Bayesian framework that can estimate all four uncertainty types, including aleatoric uncertainty, epistemic uncertainty, vacuity and dissonance.
+* `S-BGCN-T`: S-BGCN with a Teacher network to improve the expected class probability estimation.
+* `S-BGCN-T-K`: S-BGNN-T with Graph kernel Dirichlet Distribution Estimation (GKDE) to improve the uncertainty (Dirichlet distribution) estimation.
 
++basline:
+* `GCN`: Softmax-based GCN with uncertainty measured based on entropy (Thomas N. Kipf, Max Welling, [Semi-Supervised Classification with Graph Convolutional Networks](http://arxiv.org/abs/1609.02907), ICLR 2017)
+* `Drop-GCN`: adapts the Monte-Carlo Dropout into the GCN model to learn probabilistic uncertainty (Y. Gal and Z. Ghahramani, [Dropout as a bayesian approximation: Representing model uncertainty in deep learning](https://arxiv.org/abs/1506.02142), ICML 2016)
+* `EDL-GCN`: adapts the EDL model with GCN to estimate evidential uncertainty (Murat Sensoy, Lance Kaplan, Melih Kandemir, [Evidential Deep Learning to Quantify Classification Uncertainty](https://arxiv.org/abs/1806.01768), NeurIPS 2018)
+* `DPN-GCN`: adapts the DPN [14] method with GCN to estimate probabilistic uncertainty (Andrey Malinin, Mark Gales, [Predictive Uncertainty Estimation via Prior Networks](https://arxiv.org/abs/1802.10501), NeurIPS 2018)
 
 ## Question
 
