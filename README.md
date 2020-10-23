@@ -61,11 +61,13 @@ In order to use your own data, you have to provide
 Have a look at the `load_data()` function in `input_data.py` for an example.
 
 Our paper used six datasets, including 
->three citation network datasets
+>citation network datasets
+
 Cora, Citeseer, and Pubmed datasets, the original datasets can be found here: http://www.cs.umd.edu/~sen/lbc-proj/LBC.html.
 
->three other datasets
-Coauthor Physics, Amazon Computer, and Amazon Photo datasets, which provided by https://github.com/shchur/gnn-benchmark (Oleksandr Shchur, Maximilian Mumme, Aleksandar Bojchevski, Stephan Günnemann, [Pitfalls of Graph Neural Network Evaluation](https://arxiv.org/abs/1811.05868), Relational Representation Learning Workshop, NeurIPS 2018).  
+> Coauthor Physics, Amazon Computer, and Amazon Photo
+
+Provided by https://github.com/shchur/gnn-benchmark (Oleksandr Shchur, Maximilian Mumme, Aleksandar Bojchevski, Stephan Günnemann, [Pitfalls of Graph Neural Network Evaluation](https://arxiv.org/abs/1811.05868), Relational Representation Learning Workshop, NeurIPS 2018).  
 
 
 ## Models
