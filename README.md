@@ -1,4 +1,4 @@
-# uncertainty-GNN
+# Uncertainty-GNN
 
 This is a TensorFlow implementation of the uncertainty-GNN model as described in our paper:
  
