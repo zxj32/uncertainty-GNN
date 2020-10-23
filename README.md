@@ -72,13 +72,13 @@ In this example, we load citation network data (Cora, Citeseer or Pubmed). The o
 ## Models
 
 You can choose between the following models: 
-+Our proposed:
+>Our proposed:
 * `S-GCN`: Subjective GCN that can estimate two evidential uncertainty types (vacuity and dissonance).
 * `S-BGCN`: Subjective GCN with the Bayesian framework that can estimate all four uncertainty types, including aleatoric uncertainty, epistemic uncertainty, vacuity and dissonance.
 * `S-BGCN-T`: S-BGCN with a Teacher network to improve the expected class probability estimation.
 * `S-BGCN-T-K`: S-BGNN-T with Graph kernel Dirichlet Distribution Estimation (GKDE) to improve the uncertainty (Dirichlet distribution) estimation.
 
-+basline:
+>basline:
 * `GCN`: Softmax-based GCN with uncertainty measured based on entropy (Thomas N. Kipf, Max Welling, [Semi-Supervised Classification with Graph Convolutional Networks](http://arxiv.org/abs/1609.02907), ICLR 2017)
 * `Drop-GCN`: adapts the Monte-Carlo Dropout into the GCN model to learn probabilistic uncertainty (Y. Gal and Z. Ghahramani, [Dropout as a bayesian approximation: Representing model uncertainty in deep learning](https://arxiv.org/abs/1506.02142), ICML 2016)
 * `EDL-GCN`: adapts the EDL model with GCN to estimate evidential uncertainty (Murat Sensoy, Lance Kaplan, Melih Kandemir, [Evidential Deep Learning to Quantify Classification Uncertainty](https://arxiv.org/abs/1806.01768), NeurIPS 2018)
