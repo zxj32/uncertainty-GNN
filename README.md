@@ -6,6 +6,7 @@ This is a TensorFlow implementation of the uncertainty-GNN model as described in
 
 
 ![Uncertainty Framework](un-gnn.png)
+
 A multi-source uncertainty framework of GNN that reflecting various types of uncertainties in both deep learning and belief/evidence theory domains for node classification predictions.
 
 
