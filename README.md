@@ -18,12 +18,7 @@ A multi-source uncertainty framework of GNN that reflecting various types of unc
    cd uncertainty-GNN
    ```
 
-2. Install the dependencies. The code should run with TensorFlow 1.0 and newer.
-   ```sh
-   pip install -r requirements.txt 
-   ```
-
-## Requirements
+2. Install the following dependencies. The code should run with TensorFlow 1.0 and newer.
 * TensorFlow (1.0 or later)
 * python 3.6.9
 * networkx
