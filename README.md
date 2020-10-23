@@ -48,14 +48,12 @@ Have a look at the `load_data()` function in `input_data.py` for an example.
 
 Our date processing is same as [GCN code](https://github.com/tkipf/gcn)
 
-In this example, we load epinioin data. The original datasets can be found here (epinion data): http://www.trustlet.org/downloaded and here (traffic data): http://inrix.com/publicsector.asp
 
 
 ## Models
 
 You can choose between the following models: 
-* `GCN-based`: gcn_vae_epinion.py
-* `GCN-VAE-based`: gcn_epinion.py
+
 
 ## Question
 
