@@ -2,7 +2,7 @@
 
 This is a TensorFlow implementation of the uncertainty-GNN model as described in our paper:
  
-[Xujiang Zhao](https://zxj32.github.io/), Feng Chen, Shu Hu, Jin-Hee Cho. [[Uncertainty Aware Semi-Supervised Learning on Graph Data]](https://zxj32.github.io/data/NIPS2020_Uncertainty.pdf), NIPS 2020 (**Spotlight**)
+[Xujiang Zhao](https://zxj32.github.io/), Feng Chen, Shu Hu, Jin-Hee Cho. [[Uncertainty Aware Semi-Supervised Learning on Graph Data]](https://zxj32.github.io/data/NIPS2020_Uncertainty.pdf), NeurIPS 2020 (**Spotlight**) [Slides](https://zxj32.github.io/data/NIPS2020-Uncertainty_slides.pdf)    [Poster](https://zxj32.github.io/data/NIPS2020-poster.pdf)
 
 
 ![Uncertainty Framework](un-gnn.png)
