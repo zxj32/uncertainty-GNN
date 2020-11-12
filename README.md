@@ -94,10 +94,11 @@ If you have any question, please feel free to contact me. Email is good for me.
 Please cite our paper if you use this code in your own work:
 
 ```
-@inproceedings{xujiang2020uncertainties,
+@article{zhao2020uncertainty,
   title={Uncertainty Aware Semi-Supervised Learning on Graph Data},
   author={Zhao, Xujiang and Chen, Feng and Hu, Shu and Cho, Jin-Hee},
-  booktitle={Advances in neural information processing systems},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
   year={2020}
 }
 ```
