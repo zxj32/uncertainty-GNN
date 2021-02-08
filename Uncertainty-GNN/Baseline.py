@@ -126,6 +126,9 @@ if FLAGS.model != "Drop":
         elif FLAGS.model == "GCN":
             print("Misclassification AUROC: ", "Entropy = ", roc[0])
             print("Misclassification AUPR: ", "Entropy = ", pr[0])
+            ## save output probability
+            np.save("data/output/GCN_{}.npy".format(FLAGS.dataset), prob)
+            print('finish the save')
     else:
         roc, pr = OOD_Detection(outs, FLAGS.dataset, FLAGS.model)
         if FLAGS.model == "EDL":
@@ -138,7 +141,7 @@ if FLAGS.model != "Drop":
             print("OOD_Detection AUROC: ", "Entropy = ", roc[0])
             print("OOD_Detection AUPR: ", "Entropy = ", pr[0])
             ## save output probability
-            np.save("data/output/GCN_{}.npy".format(FLAGS.dataset), prob)
+            np.save("data/output/GCN_{}_ood.npy".format(FLAGS.dataset), prob)
 else:
     # Bayesian Inference MC-Dropout
     Baye_result = []
