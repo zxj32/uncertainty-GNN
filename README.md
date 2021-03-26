@@ -21,7 +21,7 @@ A multi-source uncertainty framework of GNN that reflecting various types of unc
    ```
 
 2. Install the following dependencies. The code should run with TensorFlow 1.0 and newer.
-* TensorFlow (1.0 or later)
+* TensorFlow (1.x)
 * python 3.6.9
 * networkx
 * scikit-learn
