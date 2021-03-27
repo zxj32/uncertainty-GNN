@@ -159,7 +159,7 @@ if FLAGS.model != "Drop":
             print("OOD_Detection AUROC: ", "Entropy = ", roc[0])
             print("OOD_Detection AUPR: ", "Entropy = ", pr[0])
             ## save output probability
-            np.save("data/output/GCN_{}_ood.npy".format(FLAGS.dataset), prob)
+            np.save("data/ood/GCN_{}_ood.npy".format(FLAGS.dataset), prob)
 else:
     # Bayesian Inference MC-Dropout
     Baye_result = []
