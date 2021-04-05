@@ -20,7 +20,7 @@ FLAGS = flags.FLAGS
 flags.DEFINE_string('dataset', 'cora', 'Dataset string.')  # 'cora', 'citeseer', 'pubmed'
 flags.DEFINE_string('model', 'S_BGCN_T_K', 'Model string.')  # 'S_BGCN_T_K'
 flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
-flags.DEFINE_integer('epochs', 400, 'Number of epochs to train.')
+flags.DEFINE_integer('epochs', 1000, 'Number of epochs to train.')
 flags.DEFINE_integer('hidden1', 16, 'Number of units in hidden layer 1.')
 flags.DEFINE_float('dropout', 0.5, 'Dropout rate (1 - keep probability).')
 flags.DEFINE_float('weight_decay', 5e-4, 'Weight for L2 loss on embedding matrix.')
